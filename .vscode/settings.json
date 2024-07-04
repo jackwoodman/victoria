@@ -1,0 +1,25 @@
+{
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/venv/lib/python3.9/site-packages"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+    },
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingModuleSource": "none"
+    },
+    "files.exclude": {
+        "**/__pycache__/": true,
+        "**/.pytest_cache/": true,
+        ".mypy_cache": true,
+        "**/include/": true,
+        "**/.ruff_cache/": true,
+    },
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}"
+    },
+}
